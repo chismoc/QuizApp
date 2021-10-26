@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        style="@style/w_match_H_wrap"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            style="@style/w_match_H_wrap"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/w_match_H_wrap"
+                android:background="@color/teal_200" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/score_text_view"
+                style="@style/quizActivity_text_view"
+                android:text="Score : 0" />
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/noOfQuestions_text_view"
+            style="@style/quizActivity_text_view"
+            android:text="Number of Questions: 0/3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/w_match_H_wrap"
+                android:background="@color/teal_200" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question_text_view"
+                style="@style/quizActivity_text_view"
+                android:text="What course are you learning ?"
+                android:textColor="@color/white"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioBOne"
+                    style="@style/radioButton"
+                    android:text="Option1"/>
+
+                <RadioButton
+                    android:id="@+id/radioBTwo"
+                    style="@style/radioButton"
+                    android:text="Option2" />
+
+                <RadioButton
+                    android:id="@+id/radioBThree"
+                    style="@style/radioButton"
+                    android:text="Option3" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                app:backgroundTint="@null"
+                android:textSize="36sp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/submit"
+                />
+            <Button
+                android:id="@+id/submit2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                app:backgroundTint="@null"
+                android:textSize="36sp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/submit"
+                android:visibility="gone"
+                />
+            <Button
+                android:id="@+id/submit3_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                app:backgroundTint="@null"
+                android:textSize="36sp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/end_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                app:backgroundTint="@null"
+                android:textSize="36sp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/submit"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
