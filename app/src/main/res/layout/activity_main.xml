@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/title_Text_view"
+        android:id="@+id/title_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/teal_200"
@@ -34,9 +34,9 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/startQuiz_btn"
-        app:layout_constraintEnd_toEndOf="@+id/title_Text_view"
+        app:layout_constraintEnd_toEndOf="@+id/title_text_view"
         app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="@+id/title_Text_view" />
+        app:layout_constraintStart_toStartOf="@+id/title_text_view" />
 
     <Button
         android:id="@+id/startQuiz_btn"
